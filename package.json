@@ -2,7 +2,7 @@
   "author": "Amine Mouafik <amine@mouafik.fr>",
   "name": "payflow",
   "description": "SDK to communicate with the Payflow Payment Gateway.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": {
     "type": "git",
