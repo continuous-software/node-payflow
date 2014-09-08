@@ -1,0 +1,28 @@
+{
+  "author": "Amine Mouafik <amine@mouafik.fr>",
+  "name": "payflow",
+  "description": "SDK to communicate with the Payflow Payment Gateway.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/continuous-software/node-payflow.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "payflow",
+    "paypal",
+    "gateway",
+    "payment"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "underscore":"1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "should": "~4.0.4"
+  }
+}
