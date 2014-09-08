@@ -5,7 +5,9 @@ var http = require('http');
 var https = require('https');
 var querystring = require('querystring');
 
-module.exports = function () {
+module.exports = Payflow();
+
+function Payflow() {
   var default_options = {
     schema: 'https',
     host: 'payflowpro.paypal.com',
