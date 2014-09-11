@@ -1,4 +1,5 @@
-node-payflow
-============
+![node-payflow](http://www.uniteu.com/Assets/images/PPpayFlow.jpg)
 
-SDK to communicate with the Payflow Payment Gateway.
+## Installation ##
+
+    npm install -s payflow
