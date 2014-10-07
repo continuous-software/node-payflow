@@ -9,7 +9,11 @@ require('./configure');
 
 
 describe('SDK', function () {
+
+    this.timeout(0);
+
     describe('Execute', function () {
+
         it('should return 0', function (done) {
             var data = {
                 TRXTYPE: "S",
@@ -19,7 +23,6 @@ describe('SDK', function () {
                 CVV2: "111",
                 AMT: "100"
             };
-
             payflow_api.execute(data, function (err, res) {
                 if (err) { done(err); }
                 expect(err).equal(null);
