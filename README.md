@@ -4,7 +4,7 @@
 
 ## Installation ##
 
-    npm install -s payflow
+    $ npm install -s payflow
 
 ## Usage
 
