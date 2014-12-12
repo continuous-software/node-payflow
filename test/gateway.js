@@ -1,5 +1,5 @@
 var conf = require('../config.js');
-var PayFlowGateway = require('../index.js');
+var PayFlowGateway = require('../index.js').gateway;
 var assert = require('assert');
 var GatewayError = require('42-cent-base').GatewayError;
 var model = require('42-cent-model');
