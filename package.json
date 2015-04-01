@@ -2,7 +2,7 @@
   "author": "Laurent Renard <laurent@continuous.in.th>",
   "name": "payflow",
   "description": "SDK for Payflow payment gateway.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV='test' node ./node_modules/.bin/mocha ./test/ -R spec -t 35000"
@@ -24,7 +24,6 @@
     "42-cent-util": "^1.0.0",
     "bluebird": "^2.3.2",
     "object-assign": "^2.0.0",
-    "payflow-report": "^0.1.0",
     "query-string": "^1.0.0",
     "request": "2.53.0"
   },
