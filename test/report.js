@@ -3,7 +3,7 @@ var factory = require('../index.js').report.factory;
 var assert = require('assert');
 var errors = require('../index.js').report.errors;
 
-describe('PayFlowReport api', function () {
+xdescribe('PayFlowReport api', function () {
     var PayFlow;
 
     beforeEach(function () {

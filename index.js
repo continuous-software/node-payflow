@@ -4,7 +4,8 @@ var PayFlowReport = require('./lib/PayFlowReport.js');
 module.exports = {
   gateway: function factory(conf) {
     return new PayFlowGateway(conf);
-  }, report: {
+  },
+  report: {
     factory: function PayFlowReportFactory(options) {
       return new PayFlowReport(options);
     },
