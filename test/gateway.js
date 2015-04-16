@@ -10,7 +10,7 @@ describe('Payflow service', function () {
 
   var service;
 
-  function randomAmount() {
+  function randomAmount () {
     return Math.ceil(Math.random() * 100);
   }
 
@@ -117,7 +117,7 @@ describe('Payflow service', function () {
     });
   });
 
-  describe('get batch list', function () {
+  xdescribe('get batch list', function () {
 
     xit('should get some stats', function (done) {
       service.getSettledBatchList(new Date(Date.now() - 24 * 3600 * 1000 * 30)).then(function (result) {
@@ -128,7 +128,7 @@ describe('Payflow service', function () {
       })
     });
 
-    it('should reject the promise when the webservice returns an error', function (done) {
+    xit('should reject the promise when the webservice returns an error', function (done) {
       service.getSettledBatchList(new Date(), new Date(Date.now() - 24 * 3600 * 100)).then(function (result) {
         throw new Error('should not get here');
       }, function (error) {
@@ -152,6 +152,25 @@ describe('Payflow service', function () {
       service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
         var transId = result.transactionId;
         return service.refundTransaction(transId);
+      })
+        .then(function (res) {
+          assert(res._original, '_original should be defined');
+          done();
+        });
+    });
+
+    it('should support partial refund', function (done) {
+      var cc = {
+        creditCardNumber: '4111111111111111',
+        expirationYear: '18',
+        expirationMonth: '01',
+        cvv: '000'
+      };
+
+      var amount = randomAmount();
+      service.submitTransaction({amount: amount}, cc).then(function (result) {
+        var transId = result.transactionId;
+        return service.refundTransaction(transId, {amount: amount});
       })
         .then(function (res) {
           assert(res._original, '_original should be defined');
