@@ -9,7 +9,7 @@
 ## Usage
 
 ```javascript
-var PayFlow = require('payflow);
+var PayFlow = require('payflow');
 var client = new PayFlow.gateway({
     PARTNER: '<PLACEHOLDER',
     VENDOR: '<PLACEHOLDER',
