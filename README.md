@@ -8,5 +8,17 @@
 
 ## Usage
 
+```javascript
+var PayFlow = require('payflow);
+var client = new PayFlow.gateway({
+    PARTNER: '<PLACEHOLDER',
+    VENDOR: '<PLACEHOLDER',
+    USER: '<PLACEHOLDER',
+    PWD: '<PLACEHOLDER'
+});
+```
+
+## Gateway API
+
 This SDK is natively compatible with [42-cent](https://github.com/continuous-software/42-cent).  
 It implements the [BaseGateway](https://github.com/continuous-software/42-cent-base) API.
