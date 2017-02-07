@@ -24,7 +24,7 @@ describe('Payflow service', function () {
     it('should submit transaction request', function (done) {
       var cc = {
         creditCardNumber: '4111111111111111',
-        expirationYear: '17',
+        expirationYear: '19',
         expirationMonth: '01',
         cvv: '000'
       };
@@ -73,7 +73,7 @@ describe('Payflow service', function () {
     it('should authorize the transaction', function (done) {
       var cc = {
         creditCardNumber: '4111111111111111',
-        expirationYear: '17',
+        expirationYear: '19',
         expirationMonth: '01',
         cvv: '000'
       };
@@ -336,7 +336,7 @@ describe('Payflow service', function () {
       var cc = new model.CreditCard()
         .withCreditCardNumber('4111111111111111')
         .withExpirationMonth('01')
-        .withExpirationYear('17')
+        .withExpirationYear('19')
         .withCvv('000');
       var prospect = new model.Prospect({
         customerFirstName: 'Ellen',
