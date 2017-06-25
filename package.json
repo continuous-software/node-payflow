@@ -25,7 +25,7 @@
     "bluebird": "^2.3.2",
     "object-assign": "^2.0.0",
     "query-string": "^1.0.0",
-    "request": "2.53.0"
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "42-cent-model": "^1.1.1",
