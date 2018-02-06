@@ -144,7 +144,7 @@ describe('Payflow service', function () {
     it('should perform a refund', function (done) {
       var cc = {
         creditCardNumber: '4111111111111111',
-        expirationYear: '18',
+        expirationYear: '21',
         expirationMonth: '01',
         cvv: '000'
       };
@@ -162,7 +162,7 @@ describe('Payflow service', function () {
     it('should support partial refund', function (done) {
       var cc = {
         creditCardNumber: '4111111111111111',
-        expirationYear: '18',
+        expirationYear: '21',
         expirationMonth: '01',
         cvv: '000'
       };
@@ -195,7 +195,7 @@ describe('Payflow service', function () {
     it('should void a non settled transaction', function (done) {
       var cc = {
         creditCardNumber: '4111111111111111',
-        expirationYear: '18',
+        expirationYear: '21',
         expirationMonth: '01',
         cvv: '000'
       };
