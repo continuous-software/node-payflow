@@ -4,6 +4,8 @@
 
 ## Installation ##
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/node-payflow.svg)](https://greenkeeper.io/)
+
     $ npm install -s payflow
 
 ## Usage
