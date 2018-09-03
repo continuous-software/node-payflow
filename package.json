@@ -22,7 +22,7 @@
   "dependencies": {
     "42-cent-base": "^1.0.0",
     "42-cent-util": "^1.0.0",
-    "bluebird": "^3.5.1",
+    "bluebird": "3.5.1",
     "object-assign": "^4.1.1",
     "query-string": "^6.0.0",
     "request": "^2.81.0"
